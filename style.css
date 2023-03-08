@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amatic+SC:wght@400;700&family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amatic+SC:wght@400;700&family=Caveat:wght@500&family=Patrick+Hand&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 100px;
+    display: block;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    background-color: oldlace;
+}
+
+#score-box{
+    margin-top: 5px;
+    display: block;
+}
+
+#score{
+    margin-left: 20px;
+    display: inline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: goldenrod;
+    
+}
+
+#health{
+    display: inline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: goldenrod;
+}
+
+#level{
+    margin-left: 20px;
+    display: inline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: goldenrod;
+}
+
+
+#game-container{
+    background-color: rgb(121, 255, 255);
+    width:  1000px;
+    height: 750px;
+    border: 5px solid goldenrod;
+}
+
+#avestan{
+    bottom: 150px;
+    font-size: 25px;
+    color: rgb(183, 165, 3);
+    left: 800px;
+    position: relative;
+    animation: avestan 5.5s infinite linear;
+}
+
+#avestan2{
+    bottom: 300px;
+    font-size: 25px;
+    color: rgb(183, 165, 3);
+    left: 800px;
+    position: relative;
+    animation: avestan 3.5s infinite linear;
+}
+
+#avestan3{
+    bottom: 275px;
+    font-size: 25px;
+    color: rgb(183, 165, 3);
+    left: 800px;
+    position: relative;
+    animation: avestan 4.2s infinite linear;
+}
+
+#avestan4{
+    bottom: 200px;
+    font-size: 25px;
+    color: rgb(183, 165, 3);
+    left: 800px;
+    position: relative;
+    animation: avestan 4s infinite linear;
+}
+
+
+@keyframes avestan{
+    0%{left:850px;}
+    100%{left:0px;}
+}
+
+
+#khorshid{
+    margin-top: 50px;
+    left: 20000px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: yellow; 
+    animation: khorshid 260s infinite linear;
+}
+
+@keyframes khorshid{
+    0%{left: 800px;}
+    50%{left: 0px;}
+    100%{left: 800px;}
+}
+
+#character{
+    margin-left: 30px ;
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    top: 450px;
+   
+}
+
+.animate{
+    animation: jump 500ms infinite;
+}
+
+.animate-double{
+    animation: doublejump 1200ms infinite;
+}
+
+@keyframes jump{
+    0%{top: 450px;}
+    30%{top: 300px;}
+    70%{top: 300px;}
+    100%{top: 450px;}
+}
+
+@keyframes doublejump{
+    0%{top: 300px;}
+    30%{top:250px;}
+    70%{top:150px;}
+    85%{top:100px;}
+    90%{top:250px;}
+    95%{top:300px;}
+    100%{top:450px;}
+}
+
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: blue; 
+    position: relative;
+    top: 430px;
+    left: 2000px ;
+    animation: block 3.5s infinite linear;
+    
+}
+
+#block2{
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    position: relative;
+    top: 401px;
+    left: 2000px;
+    animation: block 2.4s infinite linear;
+    
+}
+
+#block3{
+    width: 0px;
+    height: 0px;
+    border-bottom: 20px solid blueviolet;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: relative;
+    top: 355px;
+    left: 2000px;
+    animation: block 6s infinite linear;
+} 
+    
+
+
+#circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: yellow;
+    position: relative;
+    top: 375px;
+    left: 2000px;
+    animation: block 4s infinite linear;
+}
+
+#healthcircle{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: lightgreen;
+    position: relative;
+    top: 365px;
+    left: 2000px;
+    animation: block 6s infinite linear;
+}
+
+
+
+@keyframes block{
+    0%{left: 980px;}
+    100%{left: 0px;}
+}
+
+
+
+#instructions{
+    background-color: antiquewhite;
+    width:  1000px;
+    height: 750px;
+    border: 5px solid goldenrod;
+    padding: 50px;
+    text-align: justify;
+    font-size: 35px;
+    justify-content: center;
+    font-family:'Patrick Hand', cursive;
+}
+
+#yel{
+    color: yellow;
+    -webkit-text-stroke: 1px black;
+    font-size: 40px;
+}
+
+#grn{
+    color: lightgreen ;
+    -webkit-text-stroke: 1px black;
+    font-size: 40px;
+}
+
+#para1{
+    margin-bottom: 30px;
+}
+
+#start-button{
+    display: inline;
+    margin-top: 90px;
+    padding: 10px 200px 10px 200px;
+    margin-left: 250px;
+    border-radius: 0%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+    background-color: oldlace;
+    border-color: goldenrod;
+    text-decoration: none;
+
+}
+
+#gameover-container{
+    background-color: antiquewhite;
+    width:  1000px;
+    height: 750px;
+    border: 5px solid goldenrod;
+    justify-content: center;
+}
+
+#gameovertag{
+    font-family: 'Caveat', cursive;
+}
+
+#gameover-container h2{
+    margin-top: 150px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 150px;
+    margin-left: 270px;
+    color: goldenrod;
+}
+
+#gameover-container p{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 50px;
+    margin-left:270px;
+    margin-bottom: 35px;
+}
+
+#no-button{
+    margin-left: 20px;
+    border-radius: 0%;
+    padding: 10px 80px 10px 80px;
+    display: inline;
+    font-family:'Amatic SC', cursive ;
+    font-size: 35px;
+    background-color: oldlace;
+    border-color: goldenrod;
+}
+
+#yes-button{
+    margin-left: 300px;
+    border-radius: 0%;
+    padding: 10px 80px 10px 80px;
+    display: inline;
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+    background-color: oldlace;
+    border-color: goldenrod;
+}
+
+#gamewon-container{
+    background-color: antiquewhite;
+    width:  1000px;
+    height: 750px;
+    border: 5px solid goldenrod;
+    justify-content: center;
+}
+
+#gamewon-container h2{
+    margin-top: 150px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 150px;
+    margin-left: 270px;
+    color: goldenrod;
+}
+
+#gamewon-container p{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-bottom: 35px;
+    justify-content: center;
+}
+
+#playagain-button{
+    display: inline;
+    padding: 10px 200px 10px 200px;
+    margin-left: 250px;
+    border-radius: 0%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+    background-color: oldlace;
+    border-color: goldenrod;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
